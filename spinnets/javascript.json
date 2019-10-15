@@ -1,0 +1,19 @@
+{
+  "clg": {
+    "prefix": ["clg"],
+    "body": ["console.log('${0:martin}', $martin)$BLOCK_COMMENT_START ${CURRENT_YEAR}年${CURRENT_MONTH}月${CURRENT_DATE}日 ${CURRENT_HOUR}时${CURRENT_MINUTE}分${CURRENT_SECOND}秒 $BLOCK_COMMENT_END"],
+    "description": "console.log('item', item)"
+  },
+  "fb": {
+    "prefix": ["forObject"],
+    "body": ["for (let key in object) {", "\tconsole.log('${0:key}', ${1:object[key]})", "}"]
+  },
+  "each": {
+    "prefix": ["forEach"],
+    "body": ["Array.forEach((value, index) => {", "\tconsole.log(${0:index}, ${1:value})", "})"]
+  },
+  "map": {
+    "prefix": ["map"],
+    "body": ["Array.map((value, index) => {", "\tconsole.log(${0:index}, ${1:value})", "})"]
+  }
+}
